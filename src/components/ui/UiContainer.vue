@@ -19,8 +19,6 @@
 </template>
 
 <script>
-// TODO info in artikel, dass es hier verschiedene philosphien gibt und man das auch ohne abstraction, oder CSS class abstraktion machen könnte
-// eventuell auch link zu CSS artikel wo steht wann abstraktion und so
 export const UiContainer = {
   name: `UiContainer`,
   props: {
@@ -33,4 +31,3 @@ export const UiContainer = {
 
 export default UiContainer;
 </script>
-

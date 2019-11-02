@@ -10,7 +10,7 @@ module.exports = {
     'vue/component-name-in-template-casing': [`error`,
       `PascalCase`,
     ],
-    'vue/no-v-html': false,
+    'vue/no-v-html': `off`,
     'vue/html-closing-bracket-spacing': [`error`, {
       startTag: `never`,
       endTag: `never`,

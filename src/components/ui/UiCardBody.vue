@@ -31,4 +31,3 @@ export const UiCardBody = {
 
 export default UiCardBody;
 </script>
-

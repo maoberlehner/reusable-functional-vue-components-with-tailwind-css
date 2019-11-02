@@ -33,4 +33,3 @@ export const UiCard = {
 
 export default UiCard;
 </script>
-

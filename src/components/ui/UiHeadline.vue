@@ -23,8 +23,6 @@
 </template>
 
 <script>
-// TODO schreiben dass umständlicher weil purgable
-// https://tailwindcss.com/docs/controlling-file-size#writing-purgeable-html
 export const UiHeadline = {
   name: `UiHeadline`,
   props: {
