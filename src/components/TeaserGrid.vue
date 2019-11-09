@@ -1,10 +1,10 @@
 <template>
-  <div class="md:flex -mx-3">
+  <div class="md:flex -mx-3 -my-3">
     <TeaserGridItem
       v-for="item in items"
       :key="item.id"
       :item="item"
-      class="mx-3"
+      class="mx-3 my-3"
     />
   </div>
 </template>
