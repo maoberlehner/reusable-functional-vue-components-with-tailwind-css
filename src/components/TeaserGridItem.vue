@@ -1,9 +1,10 @@
 <template>
   <UiCard>
-    <img
+    <UiCardFigure
+      tag="img"
       :alt="item.image.alt"
       :src="item.image.src"
-    >
+    />
     <UiCardBody class="text-gray-700">
       <UiHeadline
         :level="2"
@@ -20,7 +21,7 @@
 </template>
 
 <script>
-import { UiCard, UiCardBody } from './ui/UiCard.vue';
+import { UiCard, UiCardBody, UiCardFigure } from './ui/UiCard.vue';
 import { UiHeadline } from './ui/UiHeadline.vue';
 
 export default {
@@ -28,6 +29,7 @@ export default {
   components: {
     UiCard,
     UiCardBody,
+    UiCardFigure,
     UiHeadline,
   },
   props: {

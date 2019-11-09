@@ -2,7 +2,6 @@
   <Component
     :is="props.tag"
     :ref="data.ref"
-    class="rounded overflow-hidden shadow-lg"
     :class="[
       data.class,
       data.staticClass,
@@ -19,11 +18,8 @@
 </template>
 
 <script>
-export { default as UiCardBody } from './UiCardBody.vue';
-export { default as UiCardFigure } from './UiCardFigure.vue';
-
-export const UiCard = {
-  name: `UiCard`,
+export const UiCardFigure = {
+  name: `UiCardFigure`,
   props: {
     tag: {
       default: `div`,
@@ -32,5 +28,5 @@ export const UiCard = {
   },
 };
 
-export default UiCard;
+export default UiCardFigure;
 </script>
