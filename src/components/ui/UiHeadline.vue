@@ -1,6 +1,6 @@
 <template functional>
   <Component
-    :is="props.tag || [`h1`, `h2`, `h3`, `h4`, `h5`, `h6`][props.level - 1]"
+    :is="props.tag || `h${props.level}`"
     :ref="data.ref"
     class="font-light leading-tight"
     :class="[
@@ -29,6 +29,12 @@ export const UiHeadline = {
     level: {
       required: true,
       type: Number,
+      validator(value) {
+        // Here PurgeCSS picks ob the selectors and
+        // does not remove their styles from the CSS.
+        const headlines = [`h1`, `h2`, `h3`, `h4`, `h5`, `h6`];
+        return headlines.includes(`h${value}`);
+      },
     },
     size: {
       default: null,
